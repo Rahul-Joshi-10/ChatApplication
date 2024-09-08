@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbox.css">
+    <title>Chatbot</title>
+</head>
+
+<body>
+    <div id="chat-container">
+        <div id="chat-box"></div>
+        <div id="user-input-container">
+            <div class="inputMsg">
+                <button id="attach-file-button"><img src="icons8-attachment-24.png"></button>
+                <input type="text" id="user-input" placeholder="Type here..." />
+                <button id="emoji-button"> <span>&#128512;</span> </button>
+            </div>
+
+            <div id="emoji-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="emoji-list"></div>
+                </div>
+            </div>
+            <button id="btn" onclick="sendMessage()">Send</button>
+            <!-- <button id="clear-storage-button" onclick="clearLocalStorage()">Clear Local Storage</button> -->
+        </div>
+
+    </div>
+    <button id="toggle-chat" onclick="toggleChat()">Toggle Chat</button>
+
+    <script src="emoji.js"></script>
+    <script src="chat.js"></script>
+</body>
+
+</html>
+
+
+

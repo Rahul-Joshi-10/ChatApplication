@@ -1,0 +1,35 @@
+
+.inputMsg {
+    display: flex;
+    
+
+}
+
+#attach-file-button{
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#emoji-button {
+  margin-right: 10%;
+  background-color: transparent;
+  z-index: 1000;
+  width: 10%;
+  height: auto;
+  align-items: center;
+  align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        border: none;
+        cursor: pointer;
+}
+
+.chat-message{
+  
+    overflow-wrap: break-word;
+    word-wrap: break-word; /* Fallback for older browsers */
+  
+}
+

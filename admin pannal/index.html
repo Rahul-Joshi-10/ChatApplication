@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="user-list-container">
+            <h1>Admin Panel</h1>
+            <ul id="user-list"></ul>
+        </div>
+
+        <div class="chat-container">
+            <div id="chat-box"></div>
+            <div class="inputMsg">
+                <input type="text" id="admin-message-input" placeholder="Type here..." />
+                <button id="attach-file-button"><img src="icons8-attachment-24.png"></button>
+                <button id="emoji-button"> <span>&#128512;</span> </button>
+                <div id="emoji-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div id="emoji-list"></div>
+                    </div>
+                </div>
+            </div>
+            <button id="send-admin-message-button">Send</button>
+        </div>
+
+    </div>
+    <script src="admin.js"></script>
+    <script src="emoji.js"></script>
+</body>
+
+</html>
